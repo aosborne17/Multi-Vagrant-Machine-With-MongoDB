@@ -1,1 +1,1 @@
-{"virtualbox":{"/home/vagrant/app":{"guestpath":"/home/vagrant/app","hostpath":"C:/Users/mutil_vag_with_mongodb/app","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/mutil_vag_with_mongodb","disabled":false,"__vagrantfile":true}}}
+{"virtualbox":{"/home/vagrant/app":{"guestpath":"/home/vagrant/app","hostpath":"C:/mutil_vag_with_mongodb/app","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/mutil_vag_with_mongodb","disabled":false,"__vagrantfile":true}}}
