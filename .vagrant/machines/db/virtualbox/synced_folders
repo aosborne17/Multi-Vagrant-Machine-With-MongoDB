@@ -1,1 +1,0 @@
-{"virtualbox":{"/home/vagrant/environment":{"guestpath":"/home/vagrant/environment","hostpath":"C:/mutil_vag_with_mongodb/environment/db","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/mutil_vag_with_mongodb","disabled":false,"__vagrantfile":true}}}
