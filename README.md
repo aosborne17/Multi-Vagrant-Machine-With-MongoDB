@@ -1,21 +1,15 @@
-# Setting Up MongoDB In Our Vagrant Environments
 
-
-
-
-
-In order to set up mongoDB we must have mongo.config as well as mongo.
-
-must create a variable to make data persistent in a database
+## Different Types Of Variables
 
 There are two types of variables
 - Environment variables ---> Use these inside an environment, for example a virtual machine
 - Normal variables
 
 
-Each VM is an environment, we create variables within our app VM
+Each Virtual Machine is an environment, we can make variables within this environment
 
-How to create ENV variable in linux
+
+### Creating a Variable
 
 ```bash
 name = "eng-67"
@@ -29,12 +23,18 @@ store the command value in your variable and then display it
 ``` dir=$(pwd)```
 
 ``` echo $dir```
+- When the user, enters the above command it will show them their current location, the variable has stored a linux command
+- This is how organisations are able to create shortcuts that we use day to day
 
-This is how organisations are able to create shortcuts that we use day to day
+
+### How to create ENV variable in linux
 
 ``` export name="eng-67"```
 
-``` env ``` is a command that lists to us all the available environment variables
+For the variable we have created to become an environment variable, we must use the export command
+
+``` env ``` is a command that lists to us all the available environment variables, we can do this to check if the variable
+we created is present
 
 
 ## Steps to Creating an Environment variable and using it from a Bash Script
@@ -61,10 +61,6 @@ Now when we run the script in the terminal we should see both our name
 as well as the current components of the folder
 
 
-### Steps to creating a variable connection to MongoDB
-root@ubuntu-xenial:/home# export DB_HOST="mongodb://192.168.10.111:27017/posts"
-
-27017 is the default code for connecting to mongoDB
 
  
  
@@ -73,8 +69,9 @@ root@ubuntu-xenial:/home# export DB_HOST="mongodb://192.168.10.111:27017/posts"
 ### 1) Locate the .profile file
 
 - After doing the sudo su command to become root user, locate to the /vagrant folder within the
-VM, then type ls and this should show us the .profile file
+VM, then type ls -a and this should show us the .profile file
 
+- Note that the command ``` ls -a ``` allows us to see all the hidden files, this is where .profile is located
 ```bash
 nano .profile
 ```
@@ -111,4 +108,9 @@ Note that we are drivers of the product, understanding what is going on under th
 front end team.
 
 As DevOps engineers all we need to know is how to integrate these different parts together to integrate and get the 
-product live.
+
+
+### Steps to creating a variable connection to MongoDB
+root@ubuntu-xenial:/home# export DB_HOST="mongodb://192.168.10.111:27017/posts"
+
+27017 is the default code for connecting to mongoDB
