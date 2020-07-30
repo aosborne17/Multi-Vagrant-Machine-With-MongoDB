@@ -1,8 +1,10 @@
+# Variable Persistence
+
 
 ## Different Types Of Variables
 
 There are two types of variables
-- Environment variables ---> Use these inside an environment, for example a virtual machine
+- Environment variables
 - Normal variables
 
 
@@ -107,10 +109,4 @@ The root before the path here tells us we are the root user
 Note that we are drivers of the product, understanding what is going on under the bonnet and how to write JS is for the
 front end team.
 
-As DevOps engineers all we need to know is how to integrate these different parts together to integrate and get the 
-
-
-### Steps to creating a variable connection to MongoDB
-root@ubuntu-xenial:/home# export DB_HOST="mongodb://192.168.10.111:27017/posts"
-
-27017 is the default code for connecting to mongoDB
+As DevOps engineers all we need to know is how to integrate these different parts together to integrate and get them 
