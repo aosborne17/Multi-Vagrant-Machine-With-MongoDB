@@ -28,6 +28,7 @@ store the command value in your variable and then display it
 - When the user, enters the above command it will show them their current location, the variable has stored a linux command
 - This is how organisations are able to create shortcuts that we use day to day
 
+---
 
 ### How to create ENV variable in linux
 
@@ -45,6 +46,7 @@ we created is present
 ```bash
 touch env_var.sh
 ```
+---
 
 ### 2) We then entered the file and inputted the following code
 ```bash
@@ -54,6 +56,7 @@ echo $name
 dir=$(ls)
 echo $dir
 ```
+---
 
 ### 3) Allowing Permission to the script file
 ```bash
@@ -62,7 +65,7 @@ chmod +x env_var.sh
 Now when we run the script in the terminal we should see both our name
 as well as the current components of the folder
 
-
+---
 
  
  
@@ -79,13 +82,20 @@ nano .profile
 ```
 This will allow us to enter the profile file.
 
+
+- When you create a profile inside a vm, it will inherit everything inside .bashrc
+- Our vagrant file and our Virtual Machine are two different things, when we do vagrant destroy
+our VM is destroyed but our vagrant folder is still there
+thus .profile is still present.
+
+---
 ### 2) Adding the export command to the file to make it persistent
  
 - Once inside the profile file, scroll to the bottom and add the following command
 ```bash
 EXPORT DB_HOST="mongodb://192.168.10.111:27017/posts"
 ```
-
+---
 ### 3) Making sure the variables have persisted
 
 - After having done these steps, we can save the file and exit the Virtual Machine
@@ -96,17 +106,3 @@ If we are able to see the variable that we have created, our variable has persis
 ![Persistent Data](images/checking_variable_persistence.png)
 
 
-
-
-```vagrant@ubuntu-xenial:~$ ```
-the ~$ means were are in the root directory, it does not mean we are the root user
-
-
-``` root@ubuntu-xenial: ```
-The root before the path here tells us we are the root user
-
-
-Note that we are drivers of the product, understanding what is going on under the bonnet and how to write JS is for the
-front end team.
-
-As DevOps engineers all we need to know is how to integrate these different parts together to integrate and get them 
